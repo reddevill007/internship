@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: rgb(183,113,208);
+        background: linear-gradient(90deg, rgba(183,113,208,1) 0%, rgba(153,97,199,1) 25%, rgba(130,85,192,1) 50%, rgba(82,62,178,1) 100%, rgba(50,111,170,1) 75%);
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .paybox {
+        height: 95vh;
+        width: 100%;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        -webkit-box-shadow: 0px -3px 5px 0px rgba(128, 0, 128, 0.75);
+        -moz-box-shadow: 0px -3px 5px 0px rgba(128, 0, 128, 0.75);
+        box-shadow: 0px -3px 5px 0px rgba(128, 0, 128, 0.75);
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .paybox .course-name {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .paybox .course-name h3 span {
+        font-size: 22px;
+        margin-left: 4px;
+    }
+
+    .paybox .course-name p {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .paybox .apply {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .paybox .apply input {
+        width: 70vw;
+        padding: 10px;
+        border-radius: 30px;
+        outline: none;
+        border: 2px solid #800080;
+    }
+
+    .paybox .apply button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        /* transform: translateX(calc(-50% + 15px)); */
+        padding: 10px;
+        border-radius: 30px;
+        border: 2px solid transparent;
+        color: #fff;
+        font-weight: 600;
+        background: linear-gradient(90deg, rgba(183,113,208,1) 0%, rgba(153,97,199,1) 25%, rgba(130,85,192,1) 50%, rgba(82,62,178,1) 100%, rgba(50,111,170,1) 75%);;
+    }
+
+    .offer {
+        background: linear-gradient(90deg, rgba(183,113,208,1) 0%, rgba(153,97,199,1) 25%, rgba(130,85,192,1) 50%, rgba(82,62,178,1) 100%, rgba(50,111,170,1) 75%);;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(128, 0, 128, 0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(128, 0, 128, 0.75);
+        box-shadow: 0px 0px 5px 0px rgba(128, 0, 128, 0.75);
+        padding: 10px;
+        border-radius: 10px;
+        padding: 15px;
+        color: #fff;
+    }
+
+    .offer .sub_offer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .offer .sub_offer p {
+        color: #800080;
+    }
+
+    .offer .sub_offer button {
+        padding: 10px;
+        height: fit-content;
+        border-radius: 20px;
+        border: none;
+        color: #800080;
+        font-weight: 700;
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid #800080;
+        border-radius: 20px;
+    }
+
+    .pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .pay button {
+        width: 100%;
+        padding: 10px;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        background: linear-gradient(90deg, rgba(183,113,208,1) 0%, rgba(153,97,199,1) 25%, rgba(130,85,192,1) 50%, rgba(82,62,178,1) 100%, rgba(50,111,170,1) 75%);;
+        font-size: 20px;
+    }
+
+    .foot {
+        background: #b771d0;
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 10px;
+        padding: 5px 0;
+    }
+
+    @media (max-width: 300px) {
+
+        .paybox {
+            padding: 20px;
+        }
+
+        .paybox .apply input::placeholder {
+            font-size: 10px;
+        }
+
+        .paybox .course-name h3 {
+            font-size: 15px;
+        }
+
+        .paybox .course-name h3 span {
+            font-size: 16px;
+        }
+
+        .paybox .course-name p {
+            font-size: 15px;
+        }
+    }
+
+</style>
+<body>
+    <div class="paybox">
+        <div class="course-name">
+            <h3>course selected: <span>Python</span></h3>
+            <p>&#x20B9; 699</p>
+        </div>
+        <div class="apply">
+            <input type="text" placeholder="Have any coupon code?">
+            <button>Apply</button>
+        </div>
+        <div class="offer">
+            <h3>More offers:</h3>
+            <div class="sub_offer">
+                <div class="detail">
+                    <h4>Customized Access Offer</h4>
+                    <p>(get 4 courses and save 84% on the bill)</p>
+                </div>
+                <button>view</button>
+            </div>
+            <div class="sub_offer">
+                <div class="detail">
+                    <h4>All Access Offer</h4>
+                    <p>(get all courses and save 91% on the bill)</p>
+                </div>
+                <button>view</button>
+            </div>
+        </div>
+        <div class="total">
+            <h3>Total</h3>
+            <h3>&#x20B9; 699</h3>
+        </div>
+        <div class="pay">
+            <button>Proceed to pay</button>
+        </div>
+    </div>
+    <div class="foot">
+        <p><span class="iconify" data-icon="whh:exitalt" style="color: #2d8b15;" data-height="20"></span> 100% safe and secure</p>
+        <p><span class="iconify" data-icon="bi:bag-check-fill" style="color: #8757c1;" data-height="20"></span>
+            <div class="secure">
+                <p>SECURE</p>
+                <p>SSL ENCRYPTION</p>
+            </div>
+        </p>
+        <p><span class="iconify" data-icon="simple-icons:razorpay" style="color: #8757c1;" data-height="20"></span> Razorpay</p>
+    </div>
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</body>
+</html>
