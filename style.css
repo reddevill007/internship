@@ -61,7 +61,7 @@ body {
 }
 
 .paybox .apply input {
-  width: 70vw;
+  width: 100%;
   padding: 10px;
   border-radius: 30px;
   outline: none;
@@ -98,7 +98,7 @@ body {
 }
 
 .offer .sub_offer p {
-  color: #800080;
+  color: #000;
 }
 
 .offer .sub_offer button {
@@ -147,6 +147,15 @@ body {
   justify-content: space-around;
   font-size: 10px;
   padding: 5px 0;
+}
+
+.foot .secure {
+    display: flex;
+    gap: 2px;
+}
+
+.foot .large {
+    font-size: 16px;
 }
 
 @media (max-width: 300px) {
