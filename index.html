@@ -14,10 +14,10 @@
             <h3>course selected: <span>Python</span></h3>
             <p>&#x20B9; 699</p>
         </div>
-        <div class="apply">
-            <input type="text" placeholder="Have any coupon code?">
-            <button>Apply</button>
-        </div>
+            <form class="apply" id="myForm">
+                <input type="text" placeholder="Have any coupon code?">
+                <button type="submit">Apply</button>
+            </form>
         <div class="offer">
             <h3>More offers:</h3>
             <div class="sub_offer">
@@ -36,8 +36,18 @@
             </div>
         </div>
         <div class="total">
-            <h3>Total</h3>
-            <h3>&#x20B9; 699</h3>
+            <div class="show">
+                <h3>Total</h3>
+                <h3>&#x20B9; 699</h3>
+            </div>
+            <div class="show hide" id="discount">
+                <h3>Discount</h3>
+                <h3>&#x20B9; -100</h3>
+            </div>
+            <div class="show hide" id="totalMoney">
+                <h3>Total</h3>
+                <h3>&#x20B9; 599</h3>
+            </div>
         </div>
         <div class="pay">
             <button>Proceed to pay</button>
@@ -57,5 +67,6 @@
     </div>
 
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

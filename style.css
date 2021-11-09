@@ -61,7 +61,7 @@ body {
 }
 
 .paybox .apply input {
-  width: 100%;
+  width: 325px;
   padding: 10px;
   border-radius: 30px;
   outline: none;
@@ -112,11 +112,35 @@ body {
 
 .total {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 10px;
   border: 2px solid #800080;
   border-radius: 20px;
+}
+
+.show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.show:nth-child(2) {
+  border-bottom: 2px solid #9578a0;
+  padding-bottom: 3px;
+}
+
+.show:nth-child(2),
+.show:nth-child(3) {
+  display: none;
+}
+
+.show:nth-child(2).active,
+.show:nth-child(3).active {
+  display: flex;
 }
 
 .pay {
