@@ -78,6 +78,7 @@ body {
   font-weight: 600;
   background: linear-gradient(95.79deg, #B771D0 0.84%, #8255C0 98.62%);
   border-radius: 20px;
+  width: 110px;
 }
 
 .offer {
