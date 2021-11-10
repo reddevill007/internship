@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,63 +11,71 @@
 
 <body>
     <div class="paybox">
-        <div class="course-name">
-            <h3>course selected: <span>Python</span></h3>
-            <p>&#x20B9; 699</p>
+        <div class="img">
+            <img src="img.jpg" alt="image">
         </div>
+        <div class="info">
+            <div class="course-name">
+                <h3>course selected: <span>Python</span></h3>
+                <p>&#x20B9; 699</p>
+            </div>
             <form class="apply" id="myForm">
                 <input type="text" placeholder="Have any coupon code?">
-                <button type="submit">Apply</button>
+                <button type="submit" id="btn">Apply</button>
             </form>
-        <div class="offer">
-            <h3>More offers:</h3>
-            <div class="sub_offer">
-                <div class="detail">
-                    <h4>Customized Access Offer</h4>
-                    <p>(get 4 courses and save 84% on the bill)</p>
+            <div class="offer">
+                <h3>More offers:</h3>
+                <div class="sub_offer">
+                    <div class="detail">
+                        <h4>Customized Access Offer</h4>
+                        <p>(get 4 courses and save 84% on the bill)</p>
+                    </div>
+                    <button>view</button>
                 </div>
-                <button>view</button>
-            </div>
-            <div class="sub_offer">
-                <div class="detail">
-                    <h4>All Access Offer</h4>
-                    <p>(get all courses and save 91% on the bill)</p>
+                <div class="sub_offer">
+                    <div class="detail">
+                        <h4>All Access Offer</h4>
+                        <p>(get all courses and save 91% on the bill)</p>
+                    </div>
+                    <button>view</button>
                 </div>
-                <button>view</button>
             </div>
-        </div>
-        <div class="total">
-            <div class="show">
-                <h3>Total</h3>
-                <h3>&#x20B9; 699</h3>
+            <div class="total">
+                <div class="show">
+                    <h3>Total</h3>
+                    <h3>&#x20B9; 699</h3>
+                </div>
+                <div class="show hide" id="discount">
+                    <h3>Discount</h3>
+                    <h3>&#x20B9; -100</h3>
+                </div>
+                <div class="show hide" id="totalMoney">
+                    <h3>Total</h3>
+                    <h3>&#x20B9; 599</h3>
+                </div>
             </div>
-            <div class="show hide" id="discount">
-                <h3>Discount</h3>
-                <h3>&#x20B9; -100</h3>
+            <div class="pay">
+                <button>Proceed to pay</button>
             </div>
-            <div class="show hide" id="totalMoney">
-                <h3>Total</h3>
-                <h3>&#x20B9; 599</h3>
-            </div>
-        </div>
-        <div class="pay">
-            <button>Proceed to pay</button>
         </div>
     </div>
     <div class="foot">
-        <p class="large"><span class="iconify" data-icon="whh:exitalt" style="color: #2d8b15;" data-height="20"></span> 100% safe and secure</p>
+        <p class="large"><span class="iconify" data-icon="whh:exitalt" style="color: #2d8b15;" data-height="20"></span>
+            100% safe and secure</p>
         <div class="secure">
-                <p><span class="iconify" data-icon="bi:bag-check-fill" style="color: #8757c1;" data-height="20"></span>
-                <div>
-                    <p class="large">SECURE</p>
-                    <p class="small">SSL ENCRYPTION</p>
-                </div>
+            <p><span class="iconify" data-icon="bi:bag-check-fill" style="color: #8757c1;" data-height="20"></span>
+            <div>
+                <p class="large">SECURE</p>
+                <p class="small">SSL ENCRYPTION</p>
             </div>
+        </div>
         </p>
-        <p class="large"><span class="iconify" data-icon="simple-icons:razorpay" style="color: #8757c1;" data-height="20"></span> Razorpay</p>
+        <p class="large"><span class="iconify" data-icon="simple-icons:razorpay" style="color: #8757c1;"
+                data-height="20"></span> Razorpay</p>
     </div>
 
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

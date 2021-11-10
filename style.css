@@ -34,8 +34,17 @@ body {
   left: 0;
   padding: 40px;
   display: flex;
+}
+
+.info {
+  height: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.img {
+  display: none;
 }
 
 .paybox .course-name {
@@ -72,17 +81,17 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  width: 110px;
   padding: 10px;
   border: 2px solid transparent;
   color: #fff;
   font-weight: 600;
-  background: linear-gradient(95.79deg, #B771D0 0.84%, #8255C0 98.62%);
+  background: linear-gradient(95.79deg, #b771d0 0.84%, #8255c0 98.62%);
   border-radius: 20px;
-  width: 110px;
 }
 
 .offer {
-    background: linear-gradient(95.79deg, #B771D0 0.84%, #8255C0 98.62%);
+  background: linear-gradient(95.79deg, #b771d0 0.84%, #8255c0 98.62%);
   -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
@@ -128,7 +137,6 @@ body {
   width: 100%;
 }
 
-
 .show:nth-child(2) {
   border-bottom: 2px solid #9578a0;
   padding-bottom: 3px;
@@ -157,7 +165,7 @@ body {
   color: #fff;
   border: none;
   border-radius: 20px;
-  background: linear-gradient(95.79deg, #B771D0 0.84%, #8255C0 98.62%);
+  background: linear-gradient(95.79deg, #b771d0 0.84%, #8255c0 98.62%);
   border-radius: 20px;
   font-size: 20px;
 }
@@ -175,12 +183,12 @@ body {
 }
 
 .foot .secure {
-    display: flex;
-    gap: 2px;
+  display: flex;
+  gap: 2px;
 }
 
 .foot .large {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 @media (max-width: 300px) {
@@ -202,5 +210,41 @@ body {
 
   .paybox .course-name p {
     font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .paybox {
+    bottom: 50%;
+    left: 50%;
+    height: 80vh;
+    width: 90vw;
+    border-radius: 40px;
+    transform: translate(-50%, 50%);
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .img img {
+    width: 70%;
+  }
+
+  .paybox .apply input {
+    width: 100%;
+  }
+
+  .info {
+    width: 50%;
+    border: 2px solid #362faa;
+    border-radius: 40px;
+    z-index: 1;
+    height: 90%;
+    padding: 10px;
   }
 }
