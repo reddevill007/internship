@@ -241,10 +241,12 @@ body {
 
   .info {
     width: 50%;
+    height: 100%;
     border: 2px solid #362faa;
     border-radius: 40px;
     z-index: 1;
-    height: 90%;
+    /* height: 90%; */
     padding: 10px;
+    justify-content: space-between;
   }
 }
