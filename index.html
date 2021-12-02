@@ -5,77 +5,306 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Tutedude</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="paybox">
-        <div class="img">
-            <img src="img.jpg" alt="image">
+    <nav>
+        <div class="brand">
+            <img src="logo.png" alt="logo">
         </div>
-        <div class="info">
-            <div class="course-name">
-                <h3>course selected: <span>Python</span></h3>
-                <p>&#x20B9; 699</p>
-            </div>
-            <div class="offer">
-                <h3>More offers:</h3>
-                <div class="sub_offer">
-                    <div class="detail">
-                        <h4>Customized Access Offer</h4>
-                        <p>(get 4 courses and save 84% on the bill)</p>
-                    </div>
-                    <button>view</button>
-                </div>
-                <div class="sub_offer">
-                    <div class="detail">
-                        <h4>All Access Offer</h4>
-                        <p>(get all courses and save 91% on the bill)</p>
-                    </div>
-                    <button>view</button>
-                </div>
-            </div>
-            <form class="apply" id="myForm">
-                <input type="text" placeholder="Have any coupon code?">
-                <button type="submit" id="btn">Apply</button>
-            </form>
-            <div class="total">
-                <div class="show">
-                    <h3>Total</h3>
-                    <h3>&#x20B9; 699</h3>
-                </div>
-                <div class="show hide" id="discount">
-                    <h3>Discount</h3>
-                    <h3>&#x20B9; -100</h3>
-                </div>
-                <div class="show hide" id="totalMoney">
-                    <h3>Total</h3>
-                    <h3>&#x20B9; 599</h3>
-                </div>
-            </div>
-            <div class="pay">
-                <button>Proceed to pay</button>
+        <div id="links">
+            <ul>
+                <li>explore programs</li>
+                <li>offers</li>
+                <li>money back advantage</li>
+                <li>about us</li>
+            </ul>
+        </div>
+        <div id="login">
+            <button class="log">Login</button>
+            <button class="sign">Signup</button>
+            <div class="ham">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </div>
-    <div class="foot">
-        <p class="large"><span class="iconify" data-icon="whh:exitalt" style="color: #2d8b15;" data-height="20"></span>
-            100% safe and secure</p>
-        <div class="secure">
-            <p><span class="iconify" data-icon="bi:bag-check-fill" style="color: #8757c1;" data-height="20"></span>
-            <div>
-                <p class="large">SECURE</p>
-                <p class="small">SSL ENCRYPTION</p>
-            </div>
-        </div>
-        </p>
-        <p class="large"><span class="iconify" data-icon="simple-icons:razorpay" style="color: #8757c1;"
-                data-height="20"></span> Razorpay</p>
-    </div>
+    </nav>
 
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <script src="app.js"></script>
+    <section class="home">
+        <div class="head">
+            <h1><i class="fas fa-star"></i> An IIT Delhi Alumuni Initiative</h1>
+            <div class="play">
+                <i class="fas fa-play"></i>
+            </div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="details">
+            <div class="course_details">
+                <div class="course_name">
+                    <h1>Python</h1>
+                    <p><i class="fas fa-user-graduate"></i> 450+ learner enrolled</p>
+                </div>
+                <p>Build a strong foundation of python3, Learn Python for Data Science,AI, Machine Learning,GUI,and more
+                </p>
+                <div class="image_mob">
+                    <img src="img.jpg" alt="">
+                </div>
+                <p class="more">Course Rating : <b>4.6</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></p>
+                <p class="price"><del>&#x20B9; 2399</del>&#x20B9; 699</p>
+                <button class="enroll">Enroll now</button>
+            </div>
+            <div class="image">
+                <img src="img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="room">
+        <h1>Python's Wiggle Room</h1>
+        <div class="room_box">
+            <div class="box">
+                <div class="intro">
+                    <p class="big">2<sup>nd</sup></p>
+                    <p>most popular programming language</p>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+            </div>
+            <div class="box">
+                <div class="intro">
+                    <p class="big">2<sup>nd</sup></p>
+                    <p>most popular programming language</p>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+            </div>
+            <div class="box">
+                <div class="intro">
+                    <p class="big">2<sup>nd</sup></p>
+                    <p>most popular programming language</p>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+            </div>
+            <div class="box">
+                <div class="intro">
+                    <p class="big">2<sup>nd</sup></p>
+                    <p>most popular programming language</p>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="refund">
+        <div class="refund_box">
+            <h1>TuteDude Refund Advantage</h1>
+            <div class="pay">
+                <div class="zero">
+                    <div class="small">pay</div>
+                    <div class="med">&#x20B9;</div>
+                    <div class="big">0</div>
+                </div>
+                <div class="know">
+                    <p>You pay ZERO on complete Tutedude online certification course, become eligible for tutedude REFUND PROGRAMME, and get Tutedude Certified at the cost of <p class="bg">0 INR</p></p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="receipe">
+        <h1>The TuteDude receipe of success</h1>
+        <div class="receipe_box">
+            <div class="image_box">
+                <div class="image">
+                    <img src="img.jpg" alt="">
+                </div>
+                <div class="pace">
+                    <div class="image_line">
+                        <div class="img_big">
+                            <img src="img.jpg" alt="">
+                            <p>Learn at your own Pace</p>
+                        </div>
+                        <div class="img_small">
+                            <img src="img.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="img_small">
+                            <img src="img.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="img_small">
+                            <img src="img.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="img_small">
+                            <img src="img.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="explore">
+                <button>Explore Program</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="know_more">
+        <button>
+            <div class="icon">
+                <i class="fas fa-play"></i>
+            </div>
+            <p>Know About TuteDude</p>
+        </button>
+    </section>
+
+    <section class="curriculum">
+        <div class="curriculum_box">
+            <h1>Curriculum</h1>
+            <div class="sub">
+                <p><i class="fas fa-plus-square"></i> 31 sections</p>
+                <p><i class="fas fa-chalkboard-teacher"></i> 254 lectures</p>
+                <p><i class="far fa-clock"></i> 38 hr 51 min</p>
+                <p><i class="fas fa-calendar-day"></i> 8 weeks(approx)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="intro_box">
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+            <div class="para half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus suscipit. Beatae, totam laudantium!</p>
+            </div>
+        </div>
+        <div class="read">
+            <button>Read More</button>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="project_box">
+            <div class="project_image">
+                <img src="img.jpg" alt="">
+            </div>
+            <div class="project_desc">
+                mention about any projects with some insights
+            </div>
+        </div>
+    </section>
+    
+    <section class="courses">
+        <h1 class="not_hidden">Interested in our Other Courses too?</h1>
+        <div class="other_courses">
+            <h1 class="hidden">Interested in our Other Courses too?</h1>
+            <div class="other_box">
+                <h1>Customized Pack</h1>
+                <div class="get_course">
+                    <p>Get all 20 courses @</p>
+                    <p class="price">
+                        <del>&#x20B9; 4444</del>
+                        <br>
+                        &#x20B9; 4444
+                    </p>
+                </div>
+                <p>88% student who enrolled in Python have availed this offer</p>
+                <div class="btn">
+                    <button>Know More</button>
+                </div>
+                <div class="semi"></div>
+                <div class="full">81%<br>off</div>
+            </div>
+            <div class="other_box">
+                <h1>Customized Pack</h1>
+                <div class="get_course">
+                    <p>Get all 20 courses @</p>
+                    <p class="price">
+                        <del>&#x20B9; 4444</del>
+                        <br>
+                        &#x20B9; 4444
+                    </p>
+                </div>
+                <p>88% student who enrolled in Python have availed this offer</p>
+                <div class="btn">
+                    <button>Know More</button>
+                </div>
+                <div class="semi"></div>
+                <div class="full">91%<br>off</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course_benifit">
+        <h1>Course Benifits</h1>
+        <div class="benifit_box">
+            <div class="benifit"></div>
+            <div class="benifit hidden"></div>
+        </div>
+    </section>
+
+    <div class="testimonial">
+        <h1>Hear, what others have to say</h1>
+        <div class="test_box">
+            <div class="test">
+                <div class="test_content">
+
+                </div>
+            </div>
+            <div class="test">
+                <div class="test_content">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="dot_box">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
 </body>
 
 </html>
